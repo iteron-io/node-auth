@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+
+<p>Profile</p>
+
+<% if (user) { %>
+<ul>
+    <li><%= user.email %></li>
+</ul>
+<% } else { %>
+    <p>You shouldn't be able to see this!</p>
+<% } %>
+
+<a href="/logout">Logout</a>
+
+<%- include('partials/footer'); -%>
